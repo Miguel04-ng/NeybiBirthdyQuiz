@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Le quiz anniversaire de Neybi : teste tes connaissances et partage ton score.">
+    <link rel="stylesheet" href="style.css">
+    <title>Le Quiz · Birthday Neybi</title>
+</head>
+<body class="quiz-page">
+    <header class="site-header quiz-header">
+        <a class="brand" href="index.html" aria-label="Retour à l’accueil du Birthday Quiz">
+            <span class="brand-mark">NGBM</span>
+            <span class="brand-name">Birthday Quiz</span>
+        </a>
+        <a class="back-link" href="index.html"><span aria-hidden="true">←</span> Accueil</a>
+    </header>
+
+    <main class="quiz-main">
+    <section class="quiz-intro" aria-labelledby="quiz-title">
+        <div>
+            <p class="eyebrow">Le défi commence maintenant</p>
+            <h1 id="quiz-title">Alors, tu connais vraiment <span>Neybi&nbsp;?</span></h1>
+            <p>Choisis une réponse par question, valide ton score et partage le résultat à la fin. 🖤⚜️</p>
+        </div>
+        <div class="quiz-meta" aria-label="Catégories du quiz">
+            <span>01 · On me</span>
+            <span>02 · Musique</span>
+            <span>03 · Sport</span>
+        </div>
+    </section>
+
+    <div class="cardquiz1">
+        <div class="quiz1">
+            <h2>ON ME, YES I SAY ON ME🙂</h2>
+            <div class="cadre2">
+                <h4>Connais-tu la signification de NGBM ?😅</h4>
+                <label for="ConNon">Non...😒(la tête de Chanel😂❤️)</label>
+                <input type="checkbox" name="ConNon" id="ConNon" value="ConNon"><br>
+                <label for="ConOui">WESH...😏</label>
+                <input type="checkbox" name="ConOui" id="ConOui" value="ConOui">
+                <div class="cygleNom">
+                    <label for="cygle">Donne la signification donc...😏</label>
+                    <input type="text" name="cygle" id="cygle" disabled style="border: none;">
+                </div>
+                <div class="reponse"><p class="res1" style="color: green; font-weight: 600;"></p></div>
+            </div>
+            
+
+            <div class="bord"></div>
+
+            <div class="cadre1">
+                <h4>Quel jour suis-je né ?😏</h4>
+                <label for="lundi">Lundi</label>
+                <input type="checkbox" name="lundi" id="lundi"><br>
+                <label for="Mardi">Mardi</label>
+                <input type="checkbox" name="Mardi" id="Mardi"><br>
+                <label for="Mercredi">Mercredi</label>
+                <input type="checkbox" name="Mercredi" id="Mercredi"><br>
+                <label for="Jeudi">Jeudi</label>
+                <input type="checkbox" name="Jeudi" id="Jeudi" data-correct="true"><br>
+                <label for="Vendredi">Lundi</label>
+                <input type="checkbox" name="Vendredi" id="Vendredi"><br>
+                <div class="reponse"><p class="res"></p></div>
+            </div>
+
+            <div class="bord"></div>
+
+            <div class="cadre1">
+                <h4>Quel âge ai-je en ce jour ?😏</h4>
+                <label for="age1">22 ans</label>
+                <input type="checkbox" name="age1" id="age1"><br>
+                <label for="age2">20 ans</label>
+                <input type="checkbox" name="age2" id="age2"><br>
+                <label for="age3">18 ans</label>
+                <input type="checkbox" name="age3" id="age3"><br>
+                <label for="age4">23 ans</label>
+                <input type="checkbox" name="age4" id="age4"><br>
+                <label for="age0">J'ne l'ai pas mentionné😁</label>
+                <input type="checkbox" name="age0" id="age0" data-correct="true">
+                <div class="reponse"><p class="res"></p></div>
+            </div>
+
+            <div class="bord"></div>
+
+            <div class="cadre1">
+                <h4>Ma ville Natale...🏙️👩‍🍼</h4>
+                <label for="ville1">Yaoundé</label>
+                <input type="checkbox" name="ville1" id="ville1"><br>
+                <label for="ville2">Kribi</label>
+                <input type="checkbox" name="ville2" id="ville2"><br>
+                <label for="ville3">Douala</label>
+                <input type="checkbox" name="ville3" id="ville3"><br>
+                <label for="ville4">Loum Paris😭😭🫂</label>
+                <input type="checkbox" name="ville4" id="ville4" data-correct="true">
+                <div class="reponse"><p class="res"></p></div>
+            </div>
+            
+            <div class="bord"></div>
+
+            <div class="cadre1">
+                <h4>Quel est ma couleur Préférée ?😏(ça compte beaucoup pour moi cette couleur...)</h4>
+                <label for="c1">Rouge ❤️</label>
+                <input type="checkbox" name="c1" id="c1"><br>
+                <label for="c2">Bleue 💙</label>
+                <input type="checkbox" name="c2" id="c2"><br>
+                <label for="c3">Marrone 🤎</label>
+                <input type="checkbox" name="c3" id="c3"><br>
+                <label for="c4">Noire 🖤</label>
+                <input type="checkbox" name="c4" id="c4" data-correct="true">
+                <div class="reponse"><p class="res"></p></div>
+            </div>
+
+        </div>
+        <div class="quiz2">
+            <h2>La SIQU'MU 🎶🎧⚜️...</h2>
+
+            <div class="cadre1">
+                <h4>C'est qui mon Rappeur français préféré...?🎧</h4>
+                <div class="RG1">
+                    <label for="Ninho">
+                        <div class="ig"><img src="img/Ninho.JPG" alt="Ninho"></div>
+                        Ninho
+                    </label>
+                    <input type="checkbox" name="Ninho" id="Ninho">
+                </div><br>
+                <div class="RG2">
+                    <label for="Damso">
+                        <div class="ig"><img src="img/Damso.JPG" alt="Damso"></div>
+                        Damso
+                    </label>
+                    <input type="checkbox" name="Damso" id="Damso">
+                </div><br>
+                <div class="RG2">
+                    <label for="Gazo">
+                        <div class="ig"><img src="img/Gazo.JPG" alt="Gazo"></div>
+                        Gazo
+                    </label>
+                    <input type="checkbox" name="Gazo" id="Gazo" data-correct="true">
+                </div><br>
+                <div class="RG3">
+                    <label for="Werenoi">
+                        <div class="ig"><img src="img/Werenoi.JPG" alt="Werenoi"></div>
+                        Werenoi🔱
+                    </label>
+                    <input type="checkbox" name="Werenoi" id="Werenoi">
+                </div><br>
+                <div class="RG4">
+                    <label for="LA MANO 1.9">
+                        <div class="ig"><img src="img/La_mano.JPG" alt="LA MANO 1.9"></div>
+                        LA MANO 1.9
+                    </label>
+                    <input type="checkbox" name="LA MANO 1.9" id="LA MANO 1.9">
+                </div>
+                <div class="reponse"><p class="res"></p></div>
+            </div>
+
+            <div class="bord"></div>
+
+            <div class="cadre1">
+                <h4>C'est qui ma Rappeuse française préférée...?🎧</h4>
+                <div class="RF1">
+                    <label for="Shay">
+                        <div class="ig"><img src="img/Shay.jpg" alt="Shay"></div>
+                        Shay
+                    </label>
+                    <input type="checkbox" name="Shay" id="Shay">
+                </div><br>
+                <div class="RF2">
+                    <label for="Aya">
+                        <div class="ig"><img src="img/Aya_nakamura.jpg" alt="Aya Nakamura"></div>
+                        Aya Nakamura
+                    </label>
+                    <input type="checkbox" name="Aya" id="Aya" data-correct="true">
+                </div><br>
+                <div class="RF2">
+                    <label for="Imen">
+                        <div class="ig"><img src="img/Imen_es.JPG" alt="Imen Es"></div>
+                        Imen Es
+                    </label>
+                    <input type="checkbox" name="Imen" id="Imen">
+                </div><br>
+                <div class="RF3">
+                    <label for="Marwa">
+                        <div class="ig"><img src="img/Marwa_loud.JPG" alt="Marwa Loud"></div>
+                        Marwa Loud
+                    </label>
+                    <input type="checkbox" name="Marwa" id="Marwa">
+                </div><br>
+                <div class="RF3">
+                    <label for="Ronisia">
+                        <div class="ig"><img src="img/Ronisia.JPG" alt="Ronisia"></div>
+                        Ronisia
+                    </label>
+                    <input type="checkbox" name="Ronisia" id="Ronisia">
+                </div><br>
+                <div class="reponse"><p class="res"></p></div>
+            </div>
+
+            <div class="bord"></div>
+
+            <div class="cadre1">
+                <h4>C'est qui mon Rappeur (de la langue anglaise) préféré...?🎧</h4>
+                <div class="RGA1">
+                    <label for="Central">
+                        <div class="ig"><img src="img/Central _cee.JPG" alt="Central cee"></div>
+                        Central cee
+                    </label>
+                    <input type="checkbox" name="Central" id="Central">
+                </div><br>
+                <div class="RGA2">
+                    <label for="Baby">
+                        <div class="ig"><img src="img/Lil _baby.JPG" alt="Lil Baby"></div>
+                        Lil Baby
+                    </label>
+                    <input type="checkbox" name="Baby" id="Baby">
+                </div><br>
+                <div class="RGA2">
+                    <label for="Drake">
+                        <div class="ig"><img src="img/Drake.JPG" alt="Drake"></div>
+                        Drake
+                    </label>
+                    <input type="checkbox" name="Drake" id="Drake">
+                </div><br>
+                <div class="RGA3">
+                    <label for="Young">
+                        <div class="ig"><img src="img/Young_thug.jpg" alt="Young Thug"></div>
+                        Young Thug
+                    </label>
+                    <input type="checkbox" name="Young" id="Young">
+                </div><br>
+                <div class="RGA4">
+                    <label for="Lil">
+                        <div class="ig"><img src="img/Lil_tjay.jpg" alt="Lil Tjay"></div>
+                        Lil Tjay
+                    </label>
+                    <input type="checkbox" name="Lil" id="Lil" data-correct="true">
+                </div>
+                <div class="reponse"><p class="res"></p></div>
+            </div>
+
+            <div class="bord"></div>
+
+            <div class="cadre1">
+                <h4>C'est qui ma Rappeuse (de la langue anglaise) préférée...?🎧</h4>
+                <div class="RFA1">
+                    <label for="Cardi">
+                        <div class="ig"><img src="img/Cardi_b.JPG" alt="Cardi B"></div>
+                        Cardi B
+                    </label>
+                    <input type="checkbox" name="Cardi" id="Cardi">
+                </div><br>
+                <div class="RFA2">
+                    <label for="Sexyy">
+                        <div class="ig"><img src="img/Sexyy_red.jpg" alt="Sexyy Red"></div>
+                        Sexyy Red😭😭❤️❤️❤️🫂⚜️🖤🖤🖤🎧...
+                    </label>
+                    <input type="checkbox" name="Sexyy" id="Sexyy">
+                </div><br>
+                <div class="RFA2">
+                    <label for="Ice">
+                        <div class="ig"><img src="img/Ice_spice.JPG" alt="Ice Spice"></div>
+                        Ice Spice
+                    </label>
+                    <input type="checkbox" name="Ice" id="Ice" data-correct="true">
+                </div><br>
+                <div class="RFA3">
+                    <label for="Nicki">
+                        <div class="ig"><img src="img/Nicki_minaj.JPG" alt="Nicki Minaj"></div>
+                        Nicki Minaj
+                    </label>
+                    <input type="checkbox" name="Nicki" id="Nicki">
+                </div><br>
+                <div class="RFA4">
+                    <label for="Megan">
+                        <div class="ig"><img src="img/Megan_thee_stallion.jpg" alt="Megan Thee Stallion"></div>
+                        Megan Thee Stallion
+                    </label>
+                    <input type="checkbox" name="Megan" id="Megan">
+                </div>
+                <div class="reponse"><p class="res"></p></div>
+            </div>
+
+            <div class="bord"></div>
+
+            <div class="cadre1">
+                <h4>C'est qui mon Rappeur Africain préféré du moment...?🎧</h4>
+                <div class="RA1">
+                    <label for="Didi">
+                        <div class="ig"><img src="img/Didi_b.JPG" alt="Didi B"></div>
+                        Didi B
+                    </label>
+                    <input type="checkbox" name="Didi" id="Didi">
+                </div><br>
+                <div class="RA2">
+                    <label for="Himra">
+                        <div class="ig"><img src="img/Himra.JPG" alt="Himra"></div>
+                        Himra
+                    </label>
+                    <input type="checkbox" name="Himra" id="Himra" data-correct="true">
+                </div><br>
+                <div class="RA2">
+                    <label for="Tenor">
+                        <div class="ig"><img src="img/Tenor.JPG" alt="Tenor"></div>
+                        Tenor
+                    </label>
+                    <input type="checkbox" name="Tenor" id="Tenor">
+                </div><br>
+                <div class="RA3">
+                    <label for="Suspect">
+                        <div class="ig"><img src="img/Suspect_95.JPG" alt="Suspect 95"></div>
+                        Suspect 95
+                    </label>
+                    <input type="checkbox" name="Suspect" id="Suspect">
+                </div><br>
+                <div class="RA4">
+                    <label for="Maalhox">
+                        <div class="ig"><img src="img/Maalhox.JPG" alt="Maalhox"></div>
+                        Maalhox
+                    </label>
+                    <input type="checkbox" name="Maalhox" id="Maalhox">
+                </div>
+                <div class="reponse"><p class="res"></p></div>
+            </div>
+
+            <div class="bord"></div>
+
+            <div class="cadre1">
+                <h4>Quel est mon style de Musique...?🎧</h4>
+                <label for="R&B">R&B</label>
+                <input type="checkbox" name="R&B" id="R&B"><br>
+                <label for="Afro">Afro Trap</label>
+                <input type="checkbox" name="Afro" id="Afro"><br>
+                <label for="Drill">Drill</label>
+                <input type="checkbox" name="Drill" id="Drill" data-correct="true"><br>
+                <label for="POP">POP</label>
+                <input type="checkbox" name="POP" id="POP"><br>
+                <label for="Trap">Trap</label>
+                <input type="checkbox" name="Trap" id="Trap"><br>
+                <div class="reponse"><p class="res"></p></div>
+            </div>
+
+            <div class="bord"></div>
+
+            <div class="cadre3">
+                <h4>Connais-tu que J'Rap wesh ???😏⚜️ Si oui as-tu déjà écouté mes pépites ???😏⚜️</h4>
+                <label for="NeyNon">Non...😒(la tête de Chanel😂❤️)</label>
+                <input type="checkbox" name="NeyNon" id="NeyNon" value="NeyNon"><br>
+                <label for="NeyOui">WESH...😏</label>
+                <input type="checkbox" name="NeyOui" id="NeyOui" value="NeyOui"><br>
+                <div class="reponse"><p class="res2" style="font-weight: 600;"></p></div>
+            </div>
+
+        </div>
+
+        <div class="quiz3">
+            <h2>UN PEU DE SPORT...🎉⚽✨</h2>
+
+             <div class="cadre1">
+                <h4>Quel est Mon Club préféré...?⚽</h4>
+                <div class="Cl1">
+                    <label for="Paris">
+                        <div class="ig"><img src="img/Paris.JPG" alt="Paris"></div>
+                        Paris💙
+                    </label>
+                    <input type="checkbox" name="Paris" id="Paris">
+                </div><br>
+                <div class="Cl2">
+                    <label for="United">
+                        <div class="ig"><img src="img/United.JPG" alt="Man United"></div>
+                        Man United❤️❤️‍🔥
+                    </label>
+                    <input type="checkbox" name="United" id="United">
+                </div><br>
+                <div class="Cl3">
+                    <label for="Barcelone">
+                        <div class="ig"><img src="img/Barcelone.JPG" alt="Barcelone"></div>
+                        Barcelone💙❤️
+                    </label>
+                    <input type="checkbox" name="Barcelone" id="Barcelone">
+                </div><br>
+                <div class="Cl4">
+                    <label for="City">
+                        <div class="ig"><img src="img/City.JPG" alt="Man City"></div>
+                        Man City💙💙
+                    </label>
+                    <input type="checkbox" name="City" id="City">
+                </div><br>
+                <div class="Cl5">
+                    <label for="REAL">
+                        <div class="ig"><img src="img/Real_Madrid.JPG" alt="REAL MADRID"></div>
+                        REAL MADRID🤍🤍
+                    </label>
+                    <input type="checkbox" name="REAL" id="REAL" data-correct="true">
+                </div>
+                <div class="reponse"><p class="res"></p></div>
+             </div>
+
+            <div class="bord"></div>
+
+            <div class="cadre1">
+                <h4>C'est qui mon Joueur préféré...?⚽</h4>
+                <div class="J1">
+                    <label for="Ronaldo">
+                        <div class="ig"><img src="img/Ronaldo.JPG" alt="Cristiano Ronaldo"></div>
+                        Cristiano Ronaldo
+                    </label>
+                    <input type="checkbox" name="Ronaldo" id="Ronaldo" data-correct="true">
+                </div><br>
+                <div class="J2">
+                    <label for="Foden">
+                        <div class="ig"><img src="img/Foden.JPG" alt="Foden"></div>
+                        Foden
+                    </label>
+                    <input type="checkbox" name="Foden" id="Foden">
+                </div><br>
+                <div class="J3">
+                    <label for="L.Messi">
+                        <div class="ig"><img src="img/Messi.JPG" alt="L.Messi"></div>
+                        L.Messi
+                    </label>
+                    <input type="checkbox" name="L.Messi" id="L.Messi">
+                </div><br>
+                <div class="J4">
+                    <label for="Haaland">
+                        <div class="ig"><img src="img/Haaland.JPG" alt="Haaland"></div>
+                        Haaland
+                    </label>
+                    <input type="checkbox" name="Haaland" id="Haaland">
+                </div><br>
+                <div class="J5">
+                    <label for="Mbappe">
+                        <div class="ig"><img src="img/Mbappe.JPG" alt="Mbappe"></div>
+                        Mbappe
+                    </label>
+                    <input type="checkbox" name="Mbappe" id="Mbappe">
+                </div>
+                <div class="reponse"><p class="res"></p></div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="btn1">
+        <button id="SubmitQuiz" type="button">Valider mes réponses <span aria-hidden="true">→</span></button>
+    </div>
+
+    <div class="desc2">
+        <p>
+            Merci 🙏 Pour ta participation R'noi🖤⚜️ / R'n❤️✨... 🫂 <br><br>
+            WESH 😏🔥🔥🔥.
+        </p>
+    </div>
+
+    <div class="aff">
+        <p id="resultat" aria-live="polite"></p>
+    </div>
+
+    <div class="lastCadre">
+        <div class="igney"><img src="img/NeybiDior.jpg" alt="Neybi🖤⚜️"></div>
+        <div class="btn3"><button id="senZapp" type="button">Souhaiter un heureux anniversaire à Neybi 🎉</button></div>
+    </div>
+
+    <div class="audio">
+        <audio src="" controls autoplay></audio>
+    </div>
+    </main>
+
+
+    <footer class="site-footer">
+        <span>NGBM · Birthday Quiz</span>
+        <p>&copy; 2025 Neybi Dior. Tous droits réservés.</p>
+    </footer>
+
+    <script>
+        const questions = document.querySelectorAll('.cadre1')
+        const questions1 = document.querySelectorAll('.cadre2')
+        const questions2 = document.querySelectorAll('.cadre3')
+
+        questions.forEach(question =>{
+            const checkboxes = question.querySelectorAll('input[type="checkbox"]')
+
+            checkboxes.forEach(checkbox =>{
+                checkbox.addEventListener('change', () =>{
+
+                    if(checkbox.checked) {
+                        checkboxes.forEach(cb => {
+                            if (cb !== checkbox) {
+                                cb.checked = false
+                            }
+                        })
+                    }
+                })
+            })
+        })
+
+        questions1.forEach(question1 =>{
+                const textboxes = question1.querySelectorAll('input[type="checkbox"]')
+                const textinput = question1.querySelector('input[type="text"]')
+
+                //console.log('TextInput : ', textinput)
+
+                const res1 = document.querySelector('.res1')
+                textboxes.forEach(textbox =>{
+                    textbox.addEventListener('change', () =>{
+                        if(textbox.checked){
+                            textboxes.forEach(textb => {
+                                if(textb !== textbox){
+                                    textb.checked = false
+                                }
+                            })
+
+
+                            if (textbox.value === "ConOui") {
+                                textinput.disabled = false
+                                res1.textContent =""
+                            }else{
+                                textinput.disabled = true
+                                res1.textContent = 'T\'es un faux...😒'
+                                res1.style.color = 'red'
+                            }
+                        }
+                    })
+                })
+        })
+
+        const res2 = document.querySelector('.res2')
+        questions2.forEach(question2 =>{
+            const checkboses2 = question2.querySelectorAll('input[type="checkbox"]')
+            checkboses2.forEach(check => {
+                check.addEventListener('change', () =>{
+                    if (check.checked) {
+                        checkboses2.forEach(check0 => {
+                            if (check0 !== check) {
+                                check0.checked = false
+                            }
+                        });
+
+                        if(check.value === "NeyNon"){
+                            res2.textContent = "T'es un faux...😒"
+                            res2.style.color = 'red'
+                        }else {
+                            res2.textContent = 'Et en vrai t\'as Kiffé wesh...😏🖤🎧🎶😭⚜️...'
+                            res2.style.color = 'green'
+                        }
+                    }
+                })
+            });
+        })
+
+
+        const btnS = document.getElementById('SubmitQuiz')
+        const resultat = document.getElementById('resultat')
+
+        btnS.addEventListener('click', () =>{
+            let score = 0
+            let total = questions.length
+            const textinput = document.querySelector('input[type="text"]').value
+            let resulText = ""
+
+            questions.forEach((question, index) =>{
+                const checked = question.querySelector('input[type="checkbox"]:checked')
+                const correct = question.querySelector('input[data-correct="true"]')
+                const result = question.querySelector('.res')
+                const checkboxess = question.querySelectorAll('input[type="checkbox"]')
+
+                result.textContent=''
+                result.style.color=''
+                result.style.fontWeight='600'
+
+                /*console.log('correct : ', correct)
+                console.log('correct Id : ', correct?.id)
+                
+                if (correct && correct?.id) {
+                    const label = question.querySelector(`label[for="${correct.id}"]`)
+                    console.log('label : ', label)
+
+                    if(label){
+                        const labelText = label.textContent.trim()
+                        console.log('Taille du label : ', labelText)
+                    }else{
+                        console.error('label non trouvé : ', correct?.id)
+                    }
+                }else{
+                    console.error('Input correct non trouvé ou sans ID')
+                }*/
+
+                const label = question.querySelector(`label[for="${correct.id}"]`)
+                const labelCorrect = label.textContent.trim()
+
+                if (checked && checked === correct) {
+                    score++
+                    result.textContent = "Bonne Réponse !"
+                    result.style.color='green'
+                    resulText += `Q${index + 1} : Bonne réponse ✅\n`
+                    //console.log('Resultat : ', resulText)
+                }else if(!checked){
+                result.textContent = "Choix Non Valide ! : Bonne réponse : " + labelCorrect
+                    result.style.color='red'
+                    resulText += `Q${index +1} Aucun choix\n`
+                }else{
+                    result.textContent = "Mauvaise Réponse ! Bonne réponse : " + labelCorrect
+                    result.style.color='red'
+                    resulText += `Q${index + 1} : Mauvaise réponse ❌, La Bonne réponse c'est : ${labelCorrect}\n`
+                    //console.log('Resultat : ', resulText)
+                }
+                checkboxess.forEach(cb => {
+                    cb.disabled = true
+                })
+            })
+            resultat.textContent = 'Tu as trouvé ' + score + '/' + total + ' réponses...'
+
+            const res1 = document.querySelector('.res1')
+
+            if(textinput && textinput === "Ngamga Beauclair Miguel"){
+                res1.textContent = 'Wesh You Know R\'noi 😏 / R\'n ❤️‍🔥...'
+                //console.log('bonne réponse')
+            }else{
+                //console.log('mauvaise réponse')
+                res1.textContent = "C'est Faux...😒"
+                res1.style.color = 'red'
+            }
+
+            window.score = score;
+            window.resulText = resulText
+            window.total = total
+        })
+
+        const btnWhat = document.getElementById('senZapp')
+
+        btnWhat.addEventListener('click',() =>{
+            let num = "237695033343"
+            let mes = `Heureux jour D'anniv à toi R'noi 🎉🖤⚜️... j'ai participé à ton quiz 
+            et mes states 📊 sont les suivntes... 😏
+            Résultat du Quiz : 
+            ${window.resulText}
+
+            📊Score : ${window.score}/${window.total}
+            `
+            const url = `https://wa.me/${num}?text=${encodeURIComponent(mes)}`
+            window.open(url, "_blank")
+        })
+
+    </script>
+</body>
+</html>
